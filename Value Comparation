@@ -1,0 +1,21 @@
+A = float(input("Insira o 1º valor: "))
+B = float(input("Insira o 2º valor: "))
+C = float(input("Insira o 3º valor: "))
+if A > B and A > C and B > C:
+    print(f"O maior valor é {A} e o menor {C}")
+elif A > B and A > C and C > B:
+    print(f"O maior valor é {A} e o menor {B}")
+elif B > A and B > C and C > A:
+    print(f"O maior valor é {B} e o menor {A}")
+elif B > A and B > C and A > C:
+    print(f"O maior valor é {B} e o menor {C}")
+elif C > A and C > B and B > A:
+    print(f"O maior valor é {C} e o menor {A}")
+elif C > A and C > B and A > B:
+    print(f"O maior valor é {C} e o menor {B}")
+else:
+    print("Impossível definir.")
+a1 = float(input("Insiraa o maior valor obtido: "))
+a2 = float(input("Insira o menor valor obtido: "))
+print(f"A diferença entre os valores obtidos é: {a1-a2}")
+print(f"A média entre os valores obtidos é: {a1/a2}")
