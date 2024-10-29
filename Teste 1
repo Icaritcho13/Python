@@ -1,0 +1,13 @@
+lado_muro = float(input("Determine as laterais do muro: "))
+fundo_muro = float(input("Determine o fundo do muro: "))
+altura_muro = float(input("Determine a altura do muro: "))
+area_muro = lado_muro*altura_muro*fundo_muro
+print(f"A área do muro é: {area_muro}m².")
+latas_tinta = 10
+autonomia_lata = 5/3
+autonomia_total = latas_tinta*autonomia_lata
+print(f"A quantidade de m² de muro que a tinta pode pintar é: {round(autonomia_total)}m².")
+if autonomia_total >= area_muro:
+    print("A quantidade de litros de tinta é suficiente para pintar todo o muro.")
+else:
+    print("A quantidade de litros de tinta é insuficiente para a pintura completa do muro.")
