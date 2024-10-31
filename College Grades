@@ -1,0 +1,35 @@
+N = int(input("Insira a quantidade de alunos: "))
+rep = 0
+aprov = 0
+reprov = 0
+excelente = 0
+reg_or_less = 0
+while rep < N:
+  nota_1 = float(input("Insira a nota da 1ª avaliação: "))
+  nota_2 = float(input("Insira a nota da 2ª avaliação: "))
+  nota_3 = float(input("Insira a nota da 3ª avaliação: "))
+  media = (nota_1+nota_2+nota_3)/3
+  if media >= 9:
+    print("Seu conceito é Excelente.")
+    print("Você foi aprovado.")
+    excelente += 1
+    aprov += 1
+  elif media >= 7:
+    print("Seu conceito é Bom.")
+    print("Voce foi aprovado.")
+    aprov += 1
+  elif media >= 5:
+    print("Seu conceito é Regular.")
+    print("Você foi aprovado.")
+    aprov += 1
+    reg_or_less += 1
+  else:
+    print("Seu conceito é Insuficiente.")
+    print("Você foi reprovado.")
+    reprov += 1
+    reg_or_less += 1
+
+  rep += 1
+print(f" O percentual de alunos aprovados é de {aprov/N*100}%.")
+print(f" A quantidade de alunos que obtiveram o conceito Excelente é: {excelente}.")
+print(f" A porcentagem de alunos que obtiveram um conceito Regular ou inferior é: {reg_or_less/N*100}%.")
