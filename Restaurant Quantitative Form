@@ -1,0 +1,22 @@
+N = int(input("Insira o número de pessoas entrevistadas: "))
+carne = 0
+legume = 0
+massa = 0
+for item in range (1,N+1):
+    print("""
+    Códigos correspondentes ao tipo de comida favorita:
+    1 - Carne
+    2 - Legume
+    3 - Massa
+    """)
+    resp = int(input("Insira o código: "))
+    if resp == 1:
+        carne+=1
+    elif resp == 2:
+        legume+=1
+    else:
+        massa+=1
+print(f"O número total de entrevistados foi: {N}")
+print(f"O percemtual de pessoas que preferem carne é: {carne/N*100}%")
+print(f"O percentual de pessoas que preferem legume é: {legume/N*100}%")
+print(f"O percentual de pessoas que preferem massa é: {massa/N*100}%")
