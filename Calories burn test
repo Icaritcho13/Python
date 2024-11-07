@@ -1,0 +1,15 @@
+peso = float(input("Insira o seu peso: "))
+vel_media = float(input("Insira a sua velocidade média (Km/h) durante o percurso: "))
+tempo = float(input("Insira a quantidade de tempo que seu percurso durou: "))
+gasto_kcal = peso*vel_media*tempo
+print('''
+Sexos:
+Masculino
+Feminino
+''')
+sexo = str.upper(input("Informe seu sexo: "))
+print(f"A distância percorrida foi: {vel_media*tempo}Km.")
+if sexo == "MASCULINO":
+    print(f"A quantidade de calorias gastas foi: {round(gasto_kcal+(10/gasto_kcal*100), 2)} Kcal.")
+else:
+    print(f"A quantidade de calorias gastas foi: {round(gasto_kcal, 2)} Kcal.")
